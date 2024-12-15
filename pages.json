@@ -1,0 +1,100 @@
+{
+  "pages": [
+	 
+	 
+	  
+	  
+    {
+      "path": "pages/login",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "enablePullDownRefresh": false,
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/home",
+      "style": {
+        "navigationBarTitleText": "首页"
+      }
+    },
+
+    {
+      "path": "pages/person/index",
+      "style": {
+        "navigationBarTitleText": "个人主页"
+      }
+    },
+	{
+	  "path": "pages/person/persondata",
+	  "style": {
+	    "navigationBarTitleText": "个人资料"
+	  }
+	},
+	{
+		  "path": "pages/person/prefer",
+		  "style": {
+		    "navigationBarTitleText": "个人中心"
+		  }
+		},
+  
+  //研开
+  {
+  	  "path": "pages/trip/gettrip",
+  	  "style": {
+  	    "navigationBarTitleText": "获取行程界面"
+  	  }
+  	},
+
+  {
+  	  "path": "pages/trip/daily",
+  	  "style": {
+  	    "navigationBarTitleText": "行程总览"
+  	  }
+  	},
+	{
+		"path": "pages/trip/dailyactivity",
+		"style": {
+			"navigationBarTitleText": "单日行程"
+		}
+	}, 
+		  
+
+  {
+  	  "path": "pages/trip/map",
+  	  "style": {
+  	    "navigationBarTitleText": "获取地点"
+  	  }
+  	},
+	  {
+	  	  "path": "pages/trip/trip",
+	  	  "style": {
+	  	    "navigationBarTitleText": "获取路径"
+	  	  }
+	  	},
+		
+  {
+  	  "path": "pages/userdata/history",
+  	  "style": {
+  	    "navigationBarTitleText": "历史行程"
+  	  }
+  	}
+
+],
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  }
+}
