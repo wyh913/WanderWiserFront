@@ -81,7 +81,7 @@
 						<view class="" style="display: flex;justify-content: center;">
 							<image src="../static/login/lock.png" mode="widthFix"
 								style="width: 40rpx;margin-right:16rpx ;"></image>
-							<input class="uni-input" type="password" placeholder="请输入邀请码"
+							<input class="uni-input" placeholder="请输入邀请码"
 								v-model="registerParams.Qcode">
 						</view>
 					</view>
@@ -193,7 +193,7 @@
 			
 			        // 向后端发送请求，发送验证码
 			        uni.request({
-			            url: 'http://47.108.162.90:3000/userAccount/getCaptcha',  // 后端接口地址
+			            url: 'http://127.0.0.1:3000/userAccount/getCaptcha',  // 后端接口地址
 			            method: 'POST',
 			            data: {
 			                email: this.registerParams.email  // 发送邮箱地址
@@ -256,7 +256,7 @@
 
 				// 调用后端接口
 				uni.request({
-					url: 'http://47.108.162.90:3000/userAccount/login', // 后端登录接口地址
+					url: 'http://127.0.0.1:3000/userAccount/login', // 后端登录接口地址
 					method: 'POST',
 					data: {
 						username: username, // 传递用户名
@@ -304,7 +304,8 @@
 					email,
 					password,
 					confirmPassword,
-					emailCode
+					emailCode,
+					Qcode
 				} = this.registerParams;
 
 				if (username === '' || email === '' || password === '' || Qcode == '') {
@@ -324,7 +325,7 @@
 				}
 				// 调用后端接口
 				uni.request({
-					url: 'http://47.108.162.90:3000/userAccount/register', // 后端注册接口地址
+					url: 'http://127.0.0.1:3000/userAccount/register', // 后端注册接口地址
 					method: 'POST',
 					data: {
 						username: username, // 传递电话号码

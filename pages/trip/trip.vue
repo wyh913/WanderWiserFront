@@ -26,7 +26,7 @@ export default {
   methods: {
     // 调用接口8获取路线数据
     fetchPathData() {
-      axios.get('http://47.108.162.90:3000/map/path', {
+      axios.get('http://127.0.0.1:3000/map/path', {
         params: {
           plan_id: this.planId,
           user_id: this.userId,

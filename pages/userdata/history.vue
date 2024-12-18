@@ -42,7 +42,7 @@ export default {
 
     // 调用接口6获取计划数据
     fetchPlans() {
-      axios.post('http://47.108.162.90:3000/tripManage/getByUid', {
+      axios.post('http://127.0.0.1:3000/tripManage/getByUid', {
         user_id: this.userId,
       })
       .then(response => {

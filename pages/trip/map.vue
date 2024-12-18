@@ -26,7 +26,7 @@ export default {
   methods: {
     // 调用接口7获取地点数据
     fetchMapData() {
-      axios.get('http://47.108.162.90:3000/map/map2', {
+      axios.get('http://127.0.0.1:3000/map/map2', {
         params: {
           //plan_id: this.planId,
           //user_id: this.userId,
